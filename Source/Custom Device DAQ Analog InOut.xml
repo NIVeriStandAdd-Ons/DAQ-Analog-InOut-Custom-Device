@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+  <XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>DAQ Analog InOut</eng>
+    <loc>DAQ Analog InOut</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>1</MaxOccurrence>
+  <MainPageGUID>6e5ea417-3f02-462b-8a6a-02cbb2ff9692</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+      <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+    <SourceDistribution>
+      <Source>
+        <SupportedTarget>Windows</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Engine Windows.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DAQ Analog InOut\DAQ Analog InOut Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+      <Source>
+        <SupportedTarget>Linux_x64</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\DAQ Analog InOut\Linux_x64\DAQ Analog InOut Engine Linux64.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DAQ Analog InOut\DAQ Analog InOut Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+    </SourceDistribution>
+  </CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>DAQ Analog InOut</eng>
+        <loc>DAQ Analog InOut</loc>
+      </Name>
+      <GUID>6e5ea417-3f02-462b-8a6a-02cbb2ff9692</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\daq device.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>8baf9d43-80b9-4041-9b7c-55399fc0953e</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Export Configuration RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>7bf84c18-2e43-4c1e-9a75-9e6eaf5579c3</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Disable</eng>
+            <loc>Disable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>8baf9d43-80b9-4041-9b7c-55399fc0953e-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Export.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>8baf9d43-80b9-4041-9b7c-55399fc0953e</ReferencedGUID>
+          <ButtonText>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+    </Page>
+    <Page>
+      <Name>
+        <eng>DAQ Analog InOut</eng>
+        <loc>DAQ Analog InOut</loc>
+      </Name>
+      <GUID>722e37f8-9191-45db-b2f5-cba64aa61de6</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\\daq device_disabled.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>8baf9d43-80b9-4041-9b7c-55399fc0953e</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Export Configuration RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>7bf84c18-2e43-4c1e-9a75-9e6eaf5579c3</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Enable</eng>
+            <loc>Enable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>8baf9d43-80b9-4041-9b7c-55399fc0953e-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Export.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>8baf9d43-80b9-4041-9b7c-55399fc0953e</ReferencedGUID>
+          <ButtonText>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+    </Page>
+	 <Page>
+      <Name>
+        <eng>Input Section</eng>
+        <loc>Input Section</loc>
+      </Name>
+      <GUID>c3d51edd-15a0-47f6-a048-5f26947f2f16</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\ai section.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Input Section.vi</Path>
+      </Item2Launch>
+	</Page>
+	 <Page>
+      <Name>
+        <eng>AI Signal Section</eng>
+        <loc>AI Signal Section</loc>
+      </Name>
+      <GUID>2f998331-a2cf-4f52-bf92-912a3bea874c</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\default fpga channel.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\AI Signal Section.vi</Path>
+      </Item2Launch>
+	</Page>
+	<Page>
+      <Name>
+        <eng>Output Section</eng>
+        <loc>Output Section</loc>
+      </Name>
+      <GUID>b22111a8-f5d2-4f47-8713-b96c2f7314a2</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\ao section.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DAQ Analog InOut\Windows\DAQ Analog InOut Configuration.llb\Output Section.vi</Path>
+      </Item2Launch>
+	</Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
