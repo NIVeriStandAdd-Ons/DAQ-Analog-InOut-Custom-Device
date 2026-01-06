@@ -5,7 +5,7 @@ In hardware-timed single-point mode, DAQ is inline and guaranteed to get a sampl
 
 ### LabVIEW Version ###
 
-LabVIEW 2021
+LabVIEW 2021 64-bit
 
 ### Built Availability ###
 
